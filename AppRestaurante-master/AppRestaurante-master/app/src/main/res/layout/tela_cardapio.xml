@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#FAFAFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título do Cardápio -->
+            <TextView
+                android:id="@+id/tvMenuTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cardápio"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp" />
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hosomaki"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salmão fresco enrolado no arroz, 10 unidades"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 35,00"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722"
+                    android:paddingTop="8dp" />
+
+                <!-- Controles de Quantidade -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="8dp">
+
+                    <!-- Botão de diminuir -->
+                    <Button
+                        android:id="@+id/btnDecreaseItem1"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#FF5722"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <!-- Quantidade -->
+                    <TextView
+                        android:id="@+id/tvQuantityItem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:gravity="center" />
+
+                    <!-- Botão de aumentar -->
+                    <Button
+                        android:id="@+id/btnIncreaseItem1"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="+"
+                        android:textSize="18sp"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Urumaki"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salmão fresco com arroz enrolado na alga, 10 unidades"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 35,00"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722"
+                    android:paddingTop="8dp" />
+
+                <!-- Controles de Quantidade -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="8dp">
+
+                    <!-- Botão de diminuir -->
+                    <Button
+                        android:id="@+id/btnDecreaseItem2"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#FF5722"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <!-- Quantidade -->
+                    <TextView
+                        android:id="@+id/tvQuantityItem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:gravity="center" />
+
+                    <!-- Botão de aumentar -->
+                    <Button
+                        android:id="@+id/btnIncreaseItem2"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="+"
+                        android:textSize="18sp"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temaki"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salmão fresco e arroz enrolado com alga em um formato cônico, 1 unidade"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 25,00"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722"
+                    android:paddingTop="8dp" />
+
+                <!-- Controles de Quantidade -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="8dp">
+
+                    <!-- Botão de diminuir -->
+                    <Button
+                        android:id="@+id/btnDecreaseItem3"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="-"
+                        android:textSize="18sp"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF" />
+
+                    <!-- Quantidade -->
+                    <TextView
+                        android:id="@+id/tvQuantityItem3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:gravity="center" />
+
+                    <!-- Botão de aumentar -->
+                    <Button
+                        android:id="@+id/btnIncreaseItem3"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="+"
+                        android:textSize="18sp"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Refrigerante de Cola"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Refrigerante de Cola, 350ml"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 8,00"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722"
+                    android:paddingTop="8dp" />
+
+                <!-- Controles de Quantidade -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="8dp">
+
+                    <!-- Botão de diminuir -->
+                    <Button
+                        android:id="@+id/btnDecreaseItem4"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="-"
+                        android:textSize="18sp"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF" />
+
+                    <!-- Quantidade -->
+                    <TextView
+                        android:id="@+id/tvQuantityItem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:gravity="center" />
+
+                    <!-- Botão de aumentar -->
+                    <Button
+                        android:id="@+id/btnIncreaseItem4"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="+"
+                        android:textSize="18sp"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Repita o layout acima para outros itens -->
+
+            <!-- Botão para confirmar o pedido -->
+            <Button
+                android:id="@+id/btnConfirmOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmar Pedido"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF5722"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnVerConta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver Conta"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#505BF6"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
